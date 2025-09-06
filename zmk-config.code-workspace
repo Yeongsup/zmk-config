@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "blink",
+			"path": "../blink"
+		},
+		{
+			"name": "central_hids",
+			"path": "../../../../ncs/v3.1.0/nrf/samples/bluetooth/central_hids"
+		}
+	],
+	"settings": {
+		"nrf-connect.applications": [
+			"c:\\Users\\yoeng\\Projects\\blink"
+		]
+	}
+}
