@@ -29,25 +29,25 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8   |  9  |  0  | BKSP |
-// | CTRL | BT1 | BT2 | BT3 | BT4 | BT5 |   |  -  |  =  |  [   |  ]  |  \  |  `   |
-// | SHFT | USB | BLE |     |     |     |   |  _  |  +  |  {   |  }  | "|" |  ~   |
+// | CTRL | BT1 | BT2 | BT3 | BT4 | BT5 |   |  _  |  =  |  [   |  ]  |  \  |  '   |
+// | SHFT | USB | BLE |     |     |     |   |  -  |  +  |  {   |  }  | "|" |      |
 //                    | ALT |     | SPC |   |     |     | CTRL |
                         bindings = <
    &kp ESC     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6    &kp N7    &kp N8   &kp N9    &kp N0   &kp BSPC
-   &kp LCTRL   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH &kp GRAVE
-   &kp LSHFT   &out OUT_USB &out OUT_BLE &trans       &trans       &trans         &kp UNDER &kp PLUS  &kp LBRC &kp RBRC  &kp PIPE &kp TILDE
+   &kp LCTRL   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp UNDER &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH &kp SQT
+   &kp LSHFT   &out OUT_USB &out OUT_BLE &trans       &trans       &trans         &kp MINUS &kp PLUS  &kp LBRC &kp RBRC  &kp PIPE &trans 
                                          &kp LALT     &trans       &kp SPACE      &trans    &trans    &kp RCTRL
                         >;
                 };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   | PG_UP | HOME |  UP | END |     | DEL |
-// | CTRL |  ^  |  &  |  *  |  (  |  )  |   | PG_DN | LFT  | DWN | RGT | INS |  '  |
+// | CTRL |  ^  |  &  |  *  |  (  |  )  |   | PG_DN | LFT  | DWN | RGT | INS |  `  |
 // | SHFT |     |     |     |     |     |   |       |      |     |     |     |     |
 //                    | ALT |     | GUI |   |       |      | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL  &kp AT   &kp HASH  &kp DLLR &kp PRCNT   &kp PG_UP &kp HOME &kp UP    &kp END    &trans   &kp DEL
-   &kp LCTRL &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR    &kp PG_DN &kp LEFT &kp DOWN  &kp RIGHT  &kp INS  &kp SQT
+   &kp LCTRL &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR    &kp PG_DN &kp LEFT &kp DOWN  &kp RIGHT  &kp INS  &kp GRAVE
    &kp LSHFT &trans    &trans   &trans    &trans   &trans      &trans    &trans   &trans    &trans     &trans   &trans
                                 &kp LALT  &trans   &kp LGUI    &trans &trans   &kp RALT
                         >;
